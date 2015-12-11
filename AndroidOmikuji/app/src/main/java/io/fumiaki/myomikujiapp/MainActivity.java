@@ -20,11 +20,21 @@ public class MainActivity extends AppCompatActivity {
         // テキスト取得
         TextView tv = (TextView) findViewById(R.id.myTextView);
 
+        String[] results = {
+                "大吉",
+                "吉",
+                "凶"
+        };
+
         // 乱数の生成
         Random randomGenerator = new Random();
-        int num = randomGenerator.nextInt(3); // 0-2
+
+        // 結果個数取得
+        int resultsCount = results.length;
+
+        int num = randomGenerator.nextInt(resultsCount);
 
         String result = Integer.toString(num);
-        tv.setText(result);
+        tv.setText(results[num]);
     }
 }
