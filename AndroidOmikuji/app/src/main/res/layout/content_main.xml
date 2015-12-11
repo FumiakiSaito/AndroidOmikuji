@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:layout_marginBottom="24dp"
-        android:text="あなたの運勢は…" />
+        android:text="@string/omikuji_label" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,13 +28,13 @@
         android:textStyle="bold"
         android:layout_marginBottom="24dp"
         android:id="@+id/myTextView"
-        android:text="---" />
+        android:text="@string/score_label" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:onClick="getOmikuji"
-        android:text="おみくじを引く" />
+        android:text="@string/button_label" />
 
 </LinearLayout>
